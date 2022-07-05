@@ -302,7 +302,7 @@ function logic() {
             product[parentId].amount -= extraProduct[elData].amount
         }
         price.innerHTML = numberWithSpaces(product[parentId].SUMM);
-        kcall.innerHTML = product[parentId].KCALL;
+        kcall.innerHTML = numberWithSpaces(product[parentId].KCALL);
         price.innerHTML = numberWithSpaces(product[parentId].price);
         // console.log(product[parentId].price);
     }
@@ -354,11 +354,11 @@ function logic() {
         let indMas = [1, 2, 3, 4, 5, 6, 7];
 
         korzina.forEach((item, index) => {
-            receiptOut.innerHTML += `<p class = "Out"><b class = "name">${indMas[index]}.</b> ${item.name}. <b class = "piege">                                                                                                                Кол-во: </b> ${item.amount} <b class = "price"> сумма </b>  ${numberWithSpaces(item.price)}
+            receiptOut.innerHTML += `<p class = "Out"><b class = "name">${indMas[index]}.</b> ${item.name}.<br><b class = "piege">Кол-во: </b> ${item.amount} <b class = "price"> сумма </b>  ${numberWithSpaces(item.price)}
             </p>`
 
         })
-        receiptOut.innerHTML += `\n<p class = "total"><b class = "das">Калорийность:</b> ${totalKcall}kal.  <b class = "das">                                                                                                               Общая сумма:</b> ${numberWithSpaces(totalPrice)}сум</p>`
+        receiptOut.innerHTML += `\n<p class = "total"><b class = "das">Калорийность:</b> ${numberWithSpaces(totalKcall)}kal.<br><b class = "das">Общая сумма:</b> ${numberWithSpaces(totalPrice)}сум</p>`
         let amount = document.querySelectorAll('.main__product-num'),
             price = document.querySelectorAll('.main__product-price span'),
             kcall = document.querySelectorAll('.main__product-kcall span');

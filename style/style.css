@@ -467,4 +467,7 @@ a {
     .receipt__window{
         width: 91% !important;
     }
+    .receipt__window-out {
+        text-align: center;
+    }
 }
