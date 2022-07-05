@@ -273,7 +273,7 @@ function logic() {
 
         amount.innerHTML = product[parentId].amount
         price.innerHTML = numberWithSpaces(product[parentId].SUMM);
-        kcall.innerHTML = product[parentId].KCALL
+        kcall.innerHTML = numberWithSpaces(product[parentId].KCALL);
     }
 
     checkExtraProduct.forEach(product => {
