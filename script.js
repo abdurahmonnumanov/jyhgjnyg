@@ -354,7 +354,7 @@ function logic() {
         let indMas = [1, 2, 3, 4, 5, 6, 7];
 
         korzina.forEach((item, index) => {
-            receiptOut.innerHTML += `<p class = "Out"><b class = "name">${indMas[index]}.</b> ${item.name}.<br><b class = "piege">Кол-во: </b> ${item.amount} <b class = "price"> сумма </b>  ${numberWithSpaces(item.price)}
+            receiptOut.innerHTML += `<p class = "Out"><b class = "name">${indMas[index]}.</b> ${item.name}.<br><b class = "piege">Кол-во: </b> ${item.amount} <b class = "price"> сумма: </b>  ${numberWithSpaces(item.price)}
             </p>`
 
         })
