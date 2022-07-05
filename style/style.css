@@ -359,6 +359,10 @@ a {
 
 .you{
     color: rgb(50, 50, 202);
+    border-bottom: rgb(50, 50, 202) solid 1px;
+    width: max-content;
+    margin-bottom: 10px;
+
 }
 
 .piege{
@@ -375,6 +379,9 @@ a {
 
 .total{
     color: darkmagenta;
+    border-top: red dashed 3px;
+    padding-top: 20px;
+    margin-bottom: 4px;
 }
 
 .das{
@@ -396,6 +403,7 @@ a {
 
 .Out{
     white-space: pre-wrap;
+    
 }
 
 .loader__element::before {
